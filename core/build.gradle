@@ -1,0 +1,18 @@
+apply plugin: 'application'
+
+mainClassName = 'ru.komunre.Main'
+
+dependencies {
+
+}
+
+run.doFirst {
+    // Environment variables go here.
+}
+
+jar{
+    setArchiveName('KomunreMessanger.jar')
+    manifest{
+        attributes["Main-Class"] = 'ru.komunre.Main'
+    }
+}

@@ -1,0 +1,10 @@
+apply plugin: 'application'
+
+mainClassName = 'ru.komunre.Main'
+
+jar{
+    setArchiveName('KomunreMessanger-server.jar')
+    manifest{
+        attributes["Main-Class"] = 'ru.komunre.Main'
+    }
+}
